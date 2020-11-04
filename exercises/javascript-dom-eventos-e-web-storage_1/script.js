@@ -18,3 +18,12 @@ function changeToWhite() {
 }
 
 changeToWhite();
+
+function corrigeTexto() {
+let correcao = document.getElementsByTagName('h1')[0];
+correcao.innerText = "Exercício 5.1 - Javascript";
+}
+
+corrigeTexto();
+
+
