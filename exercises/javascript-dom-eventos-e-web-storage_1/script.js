@@ -26,4 +26,12 @@ correcao.innerText = "Exercício 5.1 - Javascript";
 
 corrigeTexto();
 
+function paragraphUpperCase() {
+let paragraph = getElementsByTagName('p')[1];
+document.write(paragraph.toUpperCase());
+}
+
+paragraphUpperCase();
+
+
 
