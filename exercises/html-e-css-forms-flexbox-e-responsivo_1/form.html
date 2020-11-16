@@ -5,51 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="section has-text-centered">
     <header>
-        <h1>Formulário de Currículo</h1>
+        <h1 class="title">Formulário de Currículo</h1>
     </header>
+    </section>
+    <hr>
     <fieldset id='field1'>
     <form action="" method="get">
-            <label for="name">Nome:</label>
-            <input type="text" name="nome" id='name' maxlength="50" required>
-            <label for="email">E-mail:</label>
-            <input type="text" name="email" id="email" maxlength="50" required>
-            <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf" maxlength="11" required>
-            <br>
-            <br>
-            <label for="endereco">Endereço:</label>
-            <input type="text" name='endereco' id='endereco' maxlength="200" required>
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" maxlength="28" required>
-            <label for="estados">Estado</label>
+        <div class="field">
+            <label for="name" class="label">Nome:</label>
+            <div class="control">
+                <input type="text" class="input" name="nome" id='name' maxlength="50" required>
+            </div>
+        </div>
+        <div class="field">
+                <label for="email" class="label">E-mail:</label>
+            <div class="control">
+                <input type="text" class="input" name="email" id="email" maxlength="50" placeholder='username@gmail.com'required>
+            </div>
+                <label for="cpf" class="label">CPF:</label>
+                <input type="text" class="input" name="cpf" id="cpf" maxlength="11" required>
+        </div>
+            
+            <label for="endereco" class="label">Endereço:</label>
+            <input type="text" class="input" name='endereco' id='endereco' maxlength="200" required>
+            <label for="cidade" class="label">Cidade:</label>
+            <input type="text" class="input" name="cidade" id="cidade" maxlength="28" required>
+            <label for="estados" class="label">Estado</label>
+                     
+            <div class="select">
             <select name="estados" id="estados"></select>
-            <label for="moradia-1">Casa</label>
-            <input type="radio" id='moradia-1' name='moradia' value='apartamento'>
-            <label for="moradia-2">Apartamento</label>
-            <input type="radio" id="moradia-2" name='moradia' value="apartamento">
+            </div>
+            <br>
+            <br>
+            
+            <label for="moradia-1" class="radio">Casa</label>
+            <input type="radio" class="radio" id='moradia-1' name='moradia' value='casa'>
+            <label for="moradia-2" class='radio'>Apartamento</label>
+            <input type="radio" class="radio" id="moradia-2" name='moradia' value="apartamento">
             
             
 
         </fieldset>
         <br>
         <br>
-        <fieldset id='field2'>
-            <h3>Descrição do último emprego</h3>
+        <fieldset class='field' id='field1'>
+            <h3 class="subtitle">Descrição do último emprego</h3>
             <label for="res-curr">Resumo do Currículo:</label>
             <br>
-            <textarea name="" id="res-curr" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui"></textarea>
-            <br>
-            <br>
+            <textarea name="" class="textarea" id="res-curr" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui"></textarea>
+            
             <label for="cargo">Cargo</label>
             <input type="text" id='cargo' maxlength="40">
             <label for="desc-cargo">Descrição do cargo:</label>
             <input type="text" id="desc-cargo">
-
+            <br>
+            <br>
+            <div class="field is-grouped wow">
+            <div class="control">
+                <button type="submit" class="button is-success">Enviar</button>
+            </div>
+            <div class="control">
+                <button type="reset" class="button is-danger">Cancelar</button>
+            </div>
+            </div>
         </fieldset>
-
+        
     </form>
     <script src='script.js'></script>
 </body>

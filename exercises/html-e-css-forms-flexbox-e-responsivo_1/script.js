@@ -1,6 +1,6 @@
 //adiciona tag <option> estados
 
-var states = ['sao paulo', 'rio de janeiro', 'minas gerais', 'bahia'];
+var states = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'Bahia', 'Outro'];
 var select = document.getElementById('estados');
 
 for (let i = 0; i < states.length; i++) {
