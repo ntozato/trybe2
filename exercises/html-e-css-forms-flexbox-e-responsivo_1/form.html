@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Currículo</h1>
+    </header>
+    <fieldset id='field1'>
+    <form action="" method="get">
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" id='name' maxlength="50" required>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" maxlength="50" required>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="11" required>
+            <br>
+            <br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name='endereco' id='endereco' maxlength="200" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" maxlength="28" required>
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados"></select>
+            <label for="moradia-1">Casa</label>
+            <input type="radio" id='moradia-1' name='moradia' value='apartamento'>
+            <label for="moradia-2">Apartamento</label>
+            <input type="radio" id="moradia-2" name='moradia' value="apartamento">
+            
+            
+
+        </fieldset>
+        <br>
+        <br>
+        <fieldset id='field2'>
+            <h3>Descrição do último emprego</h3>
+            <label for="res-cur">Resumo do Currículo:</label>
+            <br>
+            <textarea name="" id="res-cur" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui"></textarea>
+            <br>
+            <br>
+            <label for="cargo">Cargo</label>
+            <input type="text" id='cargo' maxlength="40">
+            <label for="desc-cargo">Descrição do cargo:</label>
+            <input type="text" id="desc-cargo">
+
+        </fieldset>
+
+    </form>
+    <script src='script.js'></script>
+</body>
+</html>
