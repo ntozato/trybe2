@@ -44,14 +44,21 @@ const order = {
 
       console.log(`Olá ${deliveryPerson}, entrega para: ${customerName}, telefone: ${customerPhone}, R. ${customerStreet}, Nº ${customerNumber}, AP ${customerApt}`)
   }
+
   
   customerInfo(order);
   
   const orderModifier = (order) => {
-    // Adicione abaixo as informações necessárias.
+
+    const newBuyer = order.name = 'Luiz Silva';
+    const newPrice = order.payment.total = 50;
+    const drink = order.order.drinks.coke.type;
+    const pizzas = Object.keys(obj.order.pizza);
+
+    console.log(`Olá ${newBuyer}, o total de seu pedido ${pizzas} e ${drink} é R$ ${newPrice},00`)
+
   
   }
 
-  console.log(info)
-  
+
   orderModifier(order);
