@@ -15,3 +15,6 @@ function sum(a, b) {
 assert.strictEqual(sum(4, 5), 9);
 assert.strictEqual(sum(0, 0), 0);
 assert.strictEqual(sum(4, '5'), 9);
+
+
+
